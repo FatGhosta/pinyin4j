@@ -16,7 +16,7 @@
 构造器通过类ResourceHelper初始化Document属性  
 有一个单例工厂，内部类PinyinRomanizationSystemResourceHolder  
 
-##类PinyinRomanizationType##  
+##类PinyinRomanizationType##
 拼音罗马化类型，包括如下几种：  
 >>HANYU_PINYIN  
 >>WADEGILES_PINYIN  
@@ -38,3 +38,11 @@ Field类，定义了左括号、右括号、逗号。
   
 2\. 该方法将char类型字符转换成16进制int类型，返回给方法getHanyuPinyinStringArray使用  
 >> private String getHanyuPinyinRecordFromChar(char ch)  
+  
+##类GwoyeuRomatzyhResource##
+有个private的Document属性  
+构造器通过类ResourceHelper初始化Document属性  
+有一个单例工厂，内部类GwoyeuRomatzyhSystemResourceHolder  
+  
+##类GwoyeuRomatzyhTranslator##
+通用拼音与国语罗马拼音类型之间转换的工具   
