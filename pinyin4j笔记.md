@@ -11,3 +11,8 @@
 1\.获取字典文件的BufferedInputStream  
 >>BufferedInputStream getResourceInputStream(String resourceName)  
 
+##类PinyinRomanizationResource##
+一个private的Document属性  
+构造器通过类ResourceHelper初始化Document属性  
+有一个单例工厂，内部类PinyinRomanizationSystemResourceHolder  
+
