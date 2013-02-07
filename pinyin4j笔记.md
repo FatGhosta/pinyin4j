@@ -35,5 +35,6 @@
 Field类，定义了左括号、右括号、逗号。  
 1\. 该方法返回ch的所有拼音发音
 >> String[] getHanyuPinyinStringArray(char ch)    
+  
 2\. 该方法将char类型字符转换成16进制int类型，返回给方法getHanyuPinyinStringArray使用  
 >> private String getHanyuPinyinRecordFromChar(char ch)  
