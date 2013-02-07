@@ -25,7 +25,7 @@
 >>TONGYONG_PINYIN  
 >>GWOYEU_ROMATZYH  
 
-##PinyinRomanizationTranslator##
+##类PinyinRomanizationTranslator##
 拼音罗马化类型之间转换的工具  
    
 ##类ChineseToPinyinResource##
@@ -46,3 +46,11 @@ Field类，定义了左括号、右括号、逗号。
   
 ##类GwoyeuRomatzyhTranslator##
 通用拼音与国语罗马拼音类型之间转换的工具   
+
+##类PinyinFormatter##
+1\. 将文字字符串，通过HanyuPinyinOutputFormat的定义，转换成拼音字符串。  
+>>static String formatHanyuPinyin(String pinyinStr,HanyuPinyinOutputFormat outputFormat)  
+  
+2\. 处理音调。  
+>>private static String convertToneNumber2ToneMark(final String pinyinStr)  
+
