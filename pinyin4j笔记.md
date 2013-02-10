@@ -54,3 +54,21 @@ Field类，定义了左括号、右括号、逗号。
 2\. 处理音调。  
 >>private static String convertToneNumber2ToneMark(final String pinyinStr)  
 
+  
+##类PinyinHelper##
+类说明：作为这个pinyin4j的最重要的类，引入了生成各种拼音格式的方法。  
+  
+1\. 通过ChineseToPinyinResource生成未格式化的拼音字符串。  
+private static String[] getUnformattedHanyuPinyinStringArray(char ch)  
+  
+2\.  生成格式化的拼音字符串  
+static private String[] getFormattedHanyuPinyinStringArray(char ch,
+            HanyuPinyinOutputFormat outputFormat)  
+          
+3\. 转换目标格式拼音字符串   
+private static String[] convertToTargetPinyinStringArray(char ch,
+            PinyinRomanizationType targetPinyinSystem)
+  
+4\. 获得首字母 
+static private String getFirstHanyuPinyinString(char ch,
+            HanyuPinyinOutputFormat outputFormat)
