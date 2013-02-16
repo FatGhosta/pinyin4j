@@ -370,9 +370,22 @@ public class PinyinHelper
             return null;
         }
     }
+    
+    static private String getHanyuPinyinWithPolyphonesString(String string){
+    	String result = ChineseWithPolyphonesToPinyinResource.getInstance().getHanyuPinyinStringWithPolyphones(string);
+		return result;
+    }
 
     // ! Hidden constructor
     private PinyinHelper()
     {
     }
+    
+    public static void main(String[] args) {
+    	String string = "调查";
+    	for(int i=0; i<string.length(); i++){
+    		String[] aaa = PinyinHelper.toHanyuPinyinStringArray(string.charAt(i));
+    		System.out.println(aaa);
+    	}
+	}
 }

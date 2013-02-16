@@ -19,6 +19,9 @@
 package net.sourceforge.pinyin4j;
 
 import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 /**
  * Helper class for file resources
@@ -36,5 +39,10 @@ class ResourceHelper
     static BufferedInputStream getResourceInputStream(String resourceName)
     {
         return new BufferedInputStream(ResourceHelper.class.getResourceAsStream(resourceName));
+    }
+    
+    static BufferedReader getResourceInputReader(String resourceName) throws Exception{
+    	InputStream is = ResourceHelper.class.getResourceAsStream(resourceName);
+    	return new BufferedReader(new InputStreamReader(is, "utf-8"));
     }
 }
